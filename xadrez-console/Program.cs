@@ -9,7 +9,7 @@ namespace xadrez_console
     {
         static void Main(string[] args)
         {
-            /*try
+            try
             {
                 Tabuleiro tab = new Tabuleiro(8, 8);
 
@@ -17,18 +17,20 @@ namespace xadrez_console
                 tab.ColocarPeca(new Torre(Cor.Preta, tab), new Posicao(1, 3));
                 tab.ColocarPeca(new Rei(Cor.Preta, tab), new Posicao(2, 4));
 
+                tab.ColocarPeca(new Rei(Cor.Branca, tab), new Posicao(3, 5));
+
                 Tela.ImprimirTabuleiro(tab);
 
             }
             catch (TabuleiroException e)
             {
                 Console.WriteLine(e.Message);
-            }*/
+            }
 
-            PosicaoXadrez pos = new PosicaoXadrez('a', 1);
-            Console.WriteLine(pos);
-            Console.WriteLine(pos.ToPosicao());
-            Console.ReadLine();
+            //posicaoxadrez pos = new posicaoxadrez('a', 1);
+            //console.writeline(pos);
+            //console.writeline(pos.toposicao());
+            //console.readline();
         }
     }
 }
