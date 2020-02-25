@@ -22,5 +22,22 @@ namespace tabuleiro
         }
 
         public abstract bool[,] MovimentosPossiveis();
+
+        public bool ExisteMovimentosPossiveis()
+        {
+            bool [,] match = MovimentosPossiveis();
+            for (int i = 0; i < tab.linhas; i++)
+            {
+                for (int j = 0; j < tab.colunas; j++)
+                {
+                    if (match[i, j])
+                    {
+                        return true;
+                    }
+                }
+            }
+
+            return false;
+        }
     }
 }

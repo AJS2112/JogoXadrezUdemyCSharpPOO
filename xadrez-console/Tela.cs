@@ -40,7 +40,7 @@ namespace xadrez_console
                     }
 
                     ImprimirPeca(tab.peca(i, j));
-                    Console.BackgroundColor = fundoOriginal;
+                    Console.BackgroundColor = fundoOriginal; 
                 }
                 Console.WriteLine();
             }
